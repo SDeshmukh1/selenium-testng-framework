@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="Resources.TestNgListener" />
+		<listener class-name="Resources.ExtentReporterNG" />
+	</listeners>
+	<test name="SmokeTest">
+		<groups>
+			<run>
+				<include name="smoke" />
+				<exclude name="sanity" />
+			</run>
+		</groups>
+		<packages>
+			<package name="com.qa.amazonTestCases" />
+		</packages>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

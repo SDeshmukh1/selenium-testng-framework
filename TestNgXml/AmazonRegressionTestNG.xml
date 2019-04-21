@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="Resources.TestNgListener" />
+		<listener class-name="Resources.ExtentReporterNG" />
+	</listeners>
+	<test name="RegressionTest">
+		<classes>
+			<class name="com.qa.amazonTestCases.StartStopDriver" />
+			<class name="com.qa.amazonTestCases.AmazonProductsPageTest" />
+			<class name="com.qa.amazonTestCases.AmazonHomeTest" />
+		</classes>
+	</test> 
+	<test name="HomeTest">
+		<classes>
+			<class name="com.qa.amazonTestCases.StartStopDriver" />
+			<class name="com.qa.amazonTestCases.AmazonHomeTest">
+				<methods>
+					<include name="checkContentOnHomePage" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="ProductTest">
+		<classes>
+			<class name="com.qa.amazonTestCases.StartStopDriver" />
+			<class name="com.qa.amazonTestCases.AmazonProductsPageTest" />
+		</classes>
+	</test> 
+</suite> <!-- Suite -->

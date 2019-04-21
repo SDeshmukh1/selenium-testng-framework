@@ -1,0 +1,4 @@
+com\qa\amazonTestCases\AmazonHomeTest.class
+com\qa\amazonTestCases\AmazonSignInTest.class
+com\qa\amazonTestCases\StartStopDriver.class
+com\qa\amazonTestCases\AmazonProductsPageTest.class

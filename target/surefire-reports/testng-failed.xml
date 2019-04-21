@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Resources.TestNgListener"/>
+    <listener class-name="Resources.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="RegressionTest(failed)">
+    <classes>
+      <class name="com.qa.amazonTestCases.AmazonHomeTest">
+        <methods>
+          <include name="initializeHomePageObjects"/>
+          <include name="checkContentOnHomePage"/>
+        </methods>
+      </class> <!-- com.qa.amazonTestCases.AmazonHomeTest -->
+    </classes>
+  </test> <!-- RegressionTest(failed) -->
+  <test thread-count="5" verbose="0" name="HomeTest(failed)">
+    <classes>
+      <class name="com.qa.amazonTestCases.AmazonHomeTest">
+        <methods>
+          <include name="initializeHomePageObjects"/>
+          <include name="checkContentOnHomePage"/>
+        </methods>
+      </class> <!-- com.qa.amazonTestCases.AmazonHomeTest -->
+    </classes>
+  </test> <!-- HomeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

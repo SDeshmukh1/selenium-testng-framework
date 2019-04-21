@@ -1,0 +1,8 @@
+Resources\TestNgListener.class
+com\qa\amazonPageObjects\ProductPageObjects.class
+com\qa\amazonPageObjects\SignInPageObjects.class
+com\qa\amazonPageObjects\HomePageObjects.class
+com\qa\amazonPages\ProductPage.class
+Resources\base.class
+com\qa\amazonPages\SignInPage.class
+com\qa\amazonPages\HomePage.class
